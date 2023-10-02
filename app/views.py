@@ -81,7 +81,7 @@ class GroupModelView(ModelView):
 
 
 
-class VyrobceView(ModelView):
+class vyrobceView(ModelView):
     datamodel = SQLAInterface(vyrobce)
     list_columns = ["id", "vyrobce", "typ_vozidla", "motor", "vykon"]
     base_order = ("id", "asc")
@@ -151,7 +151,7 @@ appbuilder.add_view(
 
 
 appbuilder.add_view(
-    VyrobceView, "List Vyrobcu", icon="fa-envelope", category="Contacts"
+    vyrobceView, "List Vyrobcu", icon="fa-envelope", category="Contacts"
 )
 
 
